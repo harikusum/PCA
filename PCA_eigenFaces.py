@@ -59,8 +59,7 @@ plt.grid(True)
 plt.show()
 
 face = X[0]
-compressed = pca.
-(face.reshape(1,-1))
+compressed = pca.transform(face.reshape(1,-1))
 reconstructed = pca.inverse_transform(compressed)
 fig, ax = plt.subplots(1,2, figsize=(8,4))
 
